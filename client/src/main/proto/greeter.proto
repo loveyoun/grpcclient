@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package grpc.client;
+package greet;
 
 service Greeter{
   rpc hello(Hello.Request) returns (Hello.Response);
