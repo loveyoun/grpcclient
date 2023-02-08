@@ -45,10 +45,12 @@ public class GreeterClient{
                 .setName(name)
                 .build();
 
+        /**클라이언트가 받는 response**/
         GreeterOuterClass.Hello.Response response;
 
         try {
-            //서버에 보낼 request, 서버에서 받을 response.
+            /**서버에 보낼 request, 서버에서 받을 response.
+            클라이언트: request -> 서버: response**/
             response = greeterBlockingStub.hello(request);
         } catch (StatusRuntimeException e) {
             System.out.println("RPC failed " + e.getStatus());
