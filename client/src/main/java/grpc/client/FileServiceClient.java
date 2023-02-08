@@ -39,6 +39,7 @@ public class FileServiceClient {
             public void onNext(DataChunk dataChunk) {
                 try {
                     bos.write(dataChunk.getData().toByteArray());
+                    log.info("downloading...");
                 } catch (IOException e) {
                     log.error("***error on write to byte array stream***", e);
                     onError(e);
