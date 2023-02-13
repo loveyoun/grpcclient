@@ -64,7 +64,7 @@ public class ClientApplication {
 //			channel.shutdownNow().awaitTermination(5, TimeUnit.SECONDS);
 //		}
 		try {
-			String fileName = "C:/Users/lovek/park.jpg";
+			String fileName = "C:\\Users\\lovekite746\\suzy.jpg";
 			ByteArrayOutputStream imageOS = fileServiceClient.downloadFile(fileName);
 			byte[] bytes = imageOS.toByteArray();
 			log.info("!!!!!!!!File has been downloaded!!!!!!!!!!!");
